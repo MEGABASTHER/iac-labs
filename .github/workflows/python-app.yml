@@ -43,6 +43,7 @@ jobs:
 
   lint:
     runs-on: ubuntu-latest
+    needs: build
     defaults:  
       run:
         working-directory: ./example-app
@@ -68,6 +69,7 @@ jobs:
   
   formatter:
     runs-on: ubuntu-latest
+    needs: build
     defaults:  
       run:
         working-directory: ./example-app
@@ -93,6 +95,7 @@ jobs:
 
   security:
     runs-on: ubuntu-latest
+    needs: build
     defaults:  
       run:
         working-directory: ./example-app
@@ -118,6 +121,7 @@ jobs:
       
   test:
     runs-on: ubuntu-latest
+    needs: [lint, formatter, security]
     defaults:  
       run:
         working-directory: ./example-app
