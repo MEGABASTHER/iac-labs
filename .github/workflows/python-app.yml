@@ -34,7 +34,7 @@ jobs:
       run: poetry install --no-root
     - name: Cache build deps
       id: cached-poetry-dependencies
-      uses: action/cache@v3
+      uses: actions/cache@v3
       with:
         path: /home/runner/work/iac-labs/iac-labs/example-app.venv
         key: ${{ runner.os }}-venv
@@ -57,7 +57,7 @@ jobs:
       uses: snok/install-poetry@v1.3.4
     - name: Recover build deps
       id: cached-poetry-dependencies
-      uses: action/cache@v3
+      uses: actions/cache@v3
       with:
         path: /home/runner/work/iac-labs/iac-labs/example-app.venv
         key: ${{ runner.os }}-venv
@@ -82,7 +82,7 @@ jobs:
       uses: snok/install-poetry@v1.3.4
     - name: Recover build deps
       id: cached-poetry-dependencies
-      uses: action/cache@v3
+      uses: actions/cache@v3
       with:
         path: /home/runner/work/iac-labs/iac-labs/example-app.venv
         key: ${{ runner.os }}-venv
@@ -107,7 +107,7 @@ jobs:
       uses: snok/install-poetry@v1.3.4
     - name: Recover build deps
       id: cached-poetry-dependencies
-      uses: action/cache@v3
+      uses: actions/cache@v3
       with:
         path: /home/runner/work/iac-labs/iac-labs/example-app.venv
         key: ${{ runner.os }}-venv
@@ -132,7 +132,7 @@ jobs:
       uses: snok/install-poetry@v1.3.4
     - name: Recover build deps
       id: cached-poetry-dependencies
-      uses: action/cache@v3
+      uses: actions/cache@v3
       with:
         path: /home/runner/work/iac-labs/iac-labs/example-app.venv
         key: ${{ runner.os }}-venv
